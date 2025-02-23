@@ -9,3 +9,11 @@ class SubscribersRepositoryInterface(ABC):
     @abstractmethod
     def select_subscriber(self, email:str, event_id: int) -> Inscritos:
         pass
+    
+    @abstractmethod
+    def select_subscribers_by_link(self, link : str, event_id: int) -> list:
+        pass
+
+    @abstractmethod
+    def get_reanking(self, event_id: int) -> list:
+        pass
