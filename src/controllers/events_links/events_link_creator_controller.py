@@ -8,7 +8,7 @@ class EventLinkCreato:
 
     def create(self, http_request: HttpRequest) -> HttpResponse:
         event_link_info = http_request.body["data"]
-        event_id = event_link_info["event_id"]
+        event_id = event_link_info["evento_id"]
         subscriber_id = event_link_info["subscriber_id"]
 
         self.__check_events_link(event_id, subscriber_id)

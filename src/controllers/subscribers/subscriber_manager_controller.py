@@ -36,7 +36,8 @@ class SubscriberManagerController:
 
                     }
                 }
-            }
+            },
+            status_code=200
         )
     
     def __fromat_event_ranking(self, event_ranking: list) ->HttpResponse:
@@ -57,5 +58,6 @@ class SubscriberManagerController:
 
                     }
                 }
-            }
+            },
+            status_code=200
         )
